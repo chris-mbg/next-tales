@@ -1,0 +1,169 @@
+{
+  "themes": {
+    "forest": {
+      "choices": [
+        {
+          "question": "Who is your main character?",
+          "options": [
+            "A brave squirrel",
+            "A wise old owl",
+            "A curious deer",
+            "A mischievous fox"
+          ],
+          "tag": "main_character"
+        },
+        {
+          "question": "Where does the story begin?",
+          "options": [
+            "At the foot of an ancient tree",
+            "Near a sparkling stream",
+            "In a hidden grove",
+            "On the edge of a mysterious meadow"
+          ],
+          "tag": "starting_location"
+        },
+        {
+          "question": "What problem does the character face?",
+          "options": [
+            "A sudden storm approaching",
+            "A lost friend",
+            "A mysterious noise from the dark woods",
+            "An enchanted barrier"
+          ],
+          "tag": "problem"
+        },
+        {
+          "question": "Who helps the main character?",
+          "options": [
+            "A friendly rabbit",
+            "A magical hedgehog",
+            "A singing bird",
+            "A wandering bear"
+          ],
+          "tag": "helper"
+        },
+        {
+          "question": "How does the story end?",
+          "options": [
+            "By finding a hidden treasure",
+            "By saving the forest from danger",
+            "By making a new friend",
+            "By discovering a secret path"
+          ],
+          "tag": "ending"
+        }
+      ],
+      "story_template": "Once upon a time, {{main_character}} was exploring {{starting_location}}. Suddenly, {{problem}} appeared. Thankfully, {{helper}} came to the rescue. In the end, they {{ending}}."
+    },
+    "ocean": {
+      "choices": [
+        {
+          "question": "Who is your main character?",
+          "options": [
+            "A playful dolphin",
+            "A clever octopus",
+            "A brave sea turtle",
+            "A curious seahorse"
+          ],
+          "tag": "main_character"
+        },
+        {
+          "question": "Where does the story begin?",
+          "options": [
+            "In a colorful coral reef",
+            "Near an old shipwreck",
+            "Deep in a kelp forest",
+            "At the bottom of a shimmering lagoon"
+          ],
+          "tag": "starting_location"
+        },
+        {
+          "question": "What problem does the character face?",
+          "options": [
+            "A missing pearl",
+            "A dangerous current",
+            "A trapped friend",
+            "A mysterious shadow in the water"
+          ],
+          "tag": "problem"
+        },
+        {
+          "question": "Who helps the main character?",
+          "options": [
+            "A friendly clownfish",
+            "A wise old whale",
+            "A speedy manta ray",
+            "A glowing jellyfish"
+          ],
+          "tag": "helper"
+        },
+        {
+          "question": "How does the story end?",
+          "options": [
+            "By finding a hidden cave",
+            "By saving a friend in need",
+            "By discovering a sunken treasure",
+            "By bringing peace to the ocean"
+          ],
+          "tag": "ending"
+        }
+      ],
+      "story_template": "Deep in the ocean, {{main_character}} was exploring {{starting_location}}. Suddenly, {{problem}} occurred. Fortunately, {{helper}} came to help. In the end, they {{ending}}."
+    },
+    "space": {
+      "choices": [
+        {
+          "question": "Who is your main character?",
+          "options": [
+            "An adventurous astronaut",
+            "A curious alien",
+            "A brave robot",
+            "A young space explorer"
+          ],
+          "tag": "main_character"
+        },
+        {
+          "question": "Where does the story begin?",
+          "options": [
+            "On a distant planet",
+            "Aboard a spaceship",
+            "In an asteroid field",
+            "On a mysterious moon"
+          ],
+          "tag": "starting_location"
+        },
+        {
+          "question": "What problem does the character face?",
+          "options": [
+            "A malfunctioning spaceship",
+            "A missing map to a distant galaxy",
+            "An unexpected meteor shower",
+            "A mysterious signal from deep space"
+          ],
+          "tag": "problem"
+        },
+        {
+          "question": "Who helps the main character?",
+          "options": [
+            "A friendly alien",
+            "An intelligent AI",
+            "A space explorer from another planet",
+            "A tiny helpful drone"
+          ],
+          "tag": "helper"
+        },
+        {
+          "question": "How does the story end?",
+          "options": [
+            "By finding a new planet",
+            "By repairing the spaceship",
+            "By making contact with new life",
+            "By discovering a hidden galaxy"
+          ],
+          "tag": "ending"
+        }
+      ],
+      "story_template": "In the vastness of space, {{main_character}} was exploring {{starting_location}}. Suddenly, {{problem}} happened. Luckily, {{helper}} offered assistance. In the end, they {{ending}}."
+    }
+  }
+}
