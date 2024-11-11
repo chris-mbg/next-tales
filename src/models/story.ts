@@ -1,11 +1,6 @@
 export const StoryThemes = ['forest', 'ocean', 'space'] as const
 
-export type StoryTemplateTag =
-  | 'main_character'
-  | 'starting_location'
-  | 'problem'
-  | 'helper'
-  | 'ending'
+export type StoryTemplateTag = 'main_character' | 'starting_location' | 'problem' | 'helper' | 'ending'
 
 export type StoryChoice = {
   question: string
@@ -18,7 +13,4 @@ export type StoryThemeBlock = {
   story_template: string
 }
 
-export type StoryThemeData = Record<
-  (typeof StoryThemes)[number],
-  StoryThemeBlock
->
+export type StoryThemeData = Record<(typeof StoryThemes)[number], StoryThemeBlock>

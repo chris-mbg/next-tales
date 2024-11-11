@@ -4,12 +4,7 @@
       "choices": [
         {
           "question": "Who is your main character?",
-          "options": [
-            "A brave squirrel",
-            "A wise old owl",
-            "A curious deer",
-            "A mischievous fox"
-          ],
+          "options": ["A brave squirrel", "A wise old owl", "A curious deer", "A mischievous fox"],
           "tag": "main_character"
         },
         {
@@ -34,12 +29,7 @@
         },
         {
           "question": "Who helps the main character?",
-          "options": [
-            "A friendly rabbit",
-            "A magical hedgehog",
-            "A singing bird",
-            "A wandering bear"
-          ],
+          "options": ["A friendly rabbit", "A magical hedgehog", "A singing bird", "A wandering bear"],
           "tag": "helper"
         },
         {
@@ -59,12 +49,7 @@
       "choices": [
         {
           "question": "Who is your main character?",
-          "options": [
-            "A playful dolphin",
-            "A clever octopus",
-            "A brave sea turtle",
-            "A curious seahorse"
-          ],
+          "options": ["A playful dolphin", "A clever octopus", "A brave sea turtle", "A curious seahorse"],
           "tag": "main_character"
         },
         {
@@ -79,22 +64,12 @@
         },
         {
           "question": "What problem does the character face?",
-          "options": [
-            "A missing pearl",
-            "A dangerous current",
-            "A trapped friend",
-            "A mysterious shadow in the water"
-          ],
+          "options": ["A missing pearl", "A dangerous current", "A trapped friend", "A mysterious shadow in the water"],
           "tag": "problem"
         },
         {
           "question": "Who helps the main character?",
-          "options": [
-            "A friendly clownfish",
-            "A wise old whale",
-            "A speedy manta ray",
-            "A glowing jellyfish"
-          ],
+          "options": ["A friendly clownfish", "A wise old whale", "A speedy manta ray", "A glowing jellyfish"],
           "tag": "helper"
         },
         {
@@ -114,22 +89,12 @@
       "choices": [
         {
           "question": "Who is your main character?",
-          "options": [
-            "An adventurous astronaut",
-            "A curious alien",
-            "A brave robot",
-            "A young space explorer"
-          ],
+          "options": ["An adventurous astronaut", "A curious alien", "A brave robot", "A young space explorer"],
           "tag": "main_character"
         },
         {
           "question": "Where does the story begin?",
-          "options": [
-            "On a distant planet",
-            "Aboard a spaceship",
-            "In an asteroid field",
-            "On a mysterious moon"
-          ],
+          "options": ["On a distant planet", "Aboard a spaceship", "In an asteroid field", "On a mysterious moon"],
           "tag": "starting_location"
         },
         {

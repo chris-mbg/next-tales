@@ -15,9 +15,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${poppins} ${nothing_you_could_do} min-h-screen flex flex-col`}
-      >
+      <body className={`${poppins} ${nothing_you_could_do} min-h-screen flex flex-col`}>
         <Topbar />
         <main className="font-poppins flex justify-center items-center p-4 m-4 border border-slate-200 flex-1">
           {children}

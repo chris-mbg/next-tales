@@ -4,8 +4,7 @@ export default function Topbar() {
       <div>
         <span className="font-handwrite text-lg">NextTales</span>
       </div>
-      <nav>
-      </nav>
+      <nav></nav>
     </div>
   )
 }

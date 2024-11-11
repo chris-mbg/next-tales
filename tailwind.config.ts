@@ -15,7 +15,7 @@ const config: Config = {
       fontFamily: {
         poppins: ['var(--font-poppins)'],
         handwrite: ['var(--font-nothing-you-could-do)'],
-      }
+      },
     },
   },
   plugins: [],
