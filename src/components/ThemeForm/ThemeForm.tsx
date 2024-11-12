@@ -25,20 +25,22 @@ export default function ThemeForm() {
           <div key={theme} className="flex gap-4 my-2">
             <input
               type="radio"
+              className='btn glass'
               id={theme}
               value={theme}
               name="story-theme"
               checked={selectedTheme === theme}
               onChange={handleThemeRadioChange}
+              aria-label={theme}
             />
             <label htmlFor={theme}>{theme.charAt(0).toUpperCase() + theme.slice(1)}</label>
           </div>
         ))}
       </fieldset>
       {selectedTheme && (
-        <div>
-          <p>Do you want to tell a story set in {selectedTheme}?</p>
-          <button type="submit">Let the story begin!</button>
+        <div className='mt-4'>
+          <p>Do you want to tell a story set in the <span className='font-bold'>{selectedTheme}</span>?</p>
+          <button type="submit" className='btn'>Let the story begin!</button>
         </div>
       )}
     </form>

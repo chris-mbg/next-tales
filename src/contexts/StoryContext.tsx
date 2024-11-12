@@ -12,6 +12,7 @@ type StoryContextType = {
   step: number | null
   handleThemeSubmit: (theme: (typeof StoryThemes)[number]) => void
   handleQuestionSubmit: ({ selectedOption, tag }: { selectedOption: string; tag: StoryTemplateTag }) => void
+  reset: () => void
 }
 
 export const StoryContext = createContext<StoryContextType>({
@@ -22,6 +23,7 @@ export const StoryContext = createContext<StoryContextType>({
   step: null,
   handleThemeSubmit: () => {},
   handleQuestionSubmit: () => {},
+  reset: () => {}
 })
 
 const storyBlockData = data.themes as StoryThemeData
@@ -68,6 +70,14 @@ const StoryProvider = ({ children }: StoryProviderProps) => {
     setStoryTemplate((prev) => prev && prev?.replace(re, selectedOption))
   }
 
+  const reset = () => {
+    setChosenTheme(null)
+    setThemeChoices(null)
+    setStoryTemplate(null)
+    setUserChosenStory([])
+    setStep(0)
+  }
+
   const values = {
     chosenTheme,
     themeChoices,
@@ -76,6 +86,7 @@ const StoryProvider = ({ children }: StoryProviderProps) => {
     step,
     handleThemeSubmit,
     handleQuestionSubmit,
+    reset
   }
 
   return <StoryContext.Provider value={values}>{children}</StoryContext.Provider>

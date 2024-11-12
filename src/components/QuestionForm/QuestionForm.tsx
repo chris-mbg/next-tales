@@ -2,7 +2,7 @@ import { ChangeEvent, FormEvent, useContext, useState } from 'react'
 import { StoryContext } from '@/src/contexts/StoryContext'
 
 export default function QuestionForm() {
-  const { step, themeChoices, handleQuestionSubmit } = useContext(StoryContext)
+  const { step, themeChoices, handleQuestionSubmit, reset } = useContext(StoryContext)
 
   const [selectedOption, setSelectedOption] = useState<string | null>(null)
 
@@ -25,13 +25,14 @@ export default function QuestionForm() {
   }
 
   return (
-    <form onSubmit={handleSubmit}>
-      <fieldset>
-        <legend>{themeChoices[step].question}</legend>
+    <form onSubmit={handleSubmit} className="gap-8 flex flex-col justify-center">
+      <fieldset className="space-y-4">
+        <legend className="font-handwrite text-2xl">{themeChoices[step].question}</legend>
         {themeChoices[step].options.map((option) => (
-          <div key={option} className="flex gap-4 my-2">
+          <div key={option} className="flex gap-4 my-2 items-center">
             <input
               type="radio"
+              className="radio radio-lg radio-primary"
               id={option}
               value={option}
               name={themeChoices[step].tag}
@@ -43,14 +44,16 @@ export default function QuestionForm() {
         ))}
       </fieldset>
       {selectedOption && (
-        <div>
-          <p></p>
+        <div className="flex justify-between items-center">
           <button
             type="submit"
             disabled={!selectedOption || themeChoices?.length === step + 1}
-            className="text-red-500"
+            className="btn-primary btn"
           >
-            Next!
+            Choose!
+          </button>
+          <button className="btn btn-outline btn-sm" type="button" onClick={() => reset()}>
+            Reset
           </button>
         </div>
       )}
